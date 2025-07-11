@@ -1,0 +1,112 @@
+/* Reset un peu */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body et typographie */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Conteneur principal */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* En-tête du blog */
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+  }
+  
+  /* Menu de navigation */
+  nav {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  nav a {
+    color: #2980b9;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #3498db;
+  }
+  
+  /* Articles - cartes */
+  .article-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    padding: 25px;
+    transition: transform 0.2s ease;
+  }
+  
+  .article-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .article-card h2 {
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .article-card .meta {
+    font-size: 0.9rem;
+    color: #95a5a6;
+    margin-bottom: 15px;
+  }
+  
+  .article-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Boutons */
+  button, .btn {
+    background-color: #2980b9;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover, .btn:hover {
+    background-color: #3498db;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    color: #95a5a6;
+    font-size: 0.9rem;
+  }
+  
