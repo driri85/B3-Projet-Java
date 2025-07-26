@@ -19,7 +19,7 @@
       return { articles: [] }
     },
     async mounted() {
-      const res = await axios.get("http://localhost:8080/api/articles")
+      const res = await axios.get("https://java-backend.arsdv.site/api/articles")
       this.articles = res.data
     }
   }

@@ -16,7 +16,7 @@
       return { historique: [] }
     },
     async mounted() {
-      const res = await axios.get("http://localhost:8080/api/historique")
+      const res = await axios.get("https://java-backend.arsdv.site/api/historique")
       this.historique = res.data
     }
   }

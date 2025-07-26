@@ -19,7 +19,7 @@ export default {
     }
   },
   async mounted() {
-    const res = await axios.get('http://localhost:8080/api/utilisateurs')
+    const res = await axios.get('https://java-backend.arsdv.site/api/utilisateurs')
     this.utilisateurs = res.data
   }
 }

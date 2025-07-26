@@ -61,9 +61,9 @@
     async mounted() {
       try {
         const [utilisateurRes, listeAchatRes, articlesRes] = await Promise.all([
-          axios.get(`http://localhost:8080/api/utilisateurs/${this.id}`),
-          axios.get(`http://localhost:8080/api/historique/utilisateur/${this.id}`),
-          axios.get(`http://localhost:8080/api/articles`)
+          axios.get(`https://java-backend.arsdv.site/api/utilisateurs/${this.id}`),
+          axios.get(`https://java-backend.arsdv.site/api/historique/utilisateur/${this.id}`),
+          axios.get(`https://java-backend.arsdv.site/api/articles`)
         ])
   
         this.utilisateur = utilisateurRes.data
@@ -78,7 +78,7 @@
         if (!this.selectedArticleId) return alert("Veuillez sélectionner un article.")
   
         try {
-          await axios.post('http://localhost:8080/api/historique', {
+          await axios.post('https://java-backend.arsdv.site/api/historique', {
             utilisateur: { id: this.utilisateur.id },
             article: { id: this.selectedArticleId }
           })
@@ -87,7 +87,7 @@
           this.showModal = false
           this.selectedArticleId = null
           // Optionnel : recharger la liste après ajout
-          const res = await axios.get(`http://localhost:8080/api/historique/utilisateur/${this.id}`)
+          const res = await axios.get(`https://java-backend.arsdv.site/api/historique/utilisateur/${this.id}`)
           this.liste_achat = res.data
         } catch (err) {
           alert("❌ Erreur lors de l'ajout.")
@@ -99,7 +99,7 @@
     if (!confirmDelete) return
 
     try {
-      await axios.delete(`http://localhost:8080/api/historique/${id}`)
+      await axios.delete(`https://java-backend.arsdv.site/api/historique/${id}`)
       this.liste_achat = this.liste_achat.filter(item => item.id !== id)
     } catch (err) {
       alert("❌ Erreur lors de la suppression.")

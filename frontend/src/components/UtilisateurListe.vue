@@ -16,7 +16,7 @@
       return { liens: [] }
     },
     async mounted() {
-      const res = await axios.get("http://localhost:8080/api/utilisateur-liste")
+      const res = await axios.get("https://java-backend.arsdv.site/api/utilisateur-liste")
       this.liens = res.data
     }
   }
