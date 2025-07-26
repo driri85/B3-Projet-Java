@@ -69,6 +69,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-    </build> v
+    </build>
 
 </project>
