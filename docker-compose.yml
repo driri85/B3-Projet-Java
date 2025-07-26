@@ -20,6 +20,3 @@ services:
     depends_on:
       - backend
     restart: unless-stopped
-
-volumes:
-  mysql_data:
