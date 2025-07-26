@@ -16,6 +16,8 @@ export default defineConfig({
     },
   },
   server: {
+    host: '0.0.0.0', // to expose to LAN
+    port: 8082,
     proxy: {
       '/api': {
         target: 'https://java-backend.arsdv.site',
