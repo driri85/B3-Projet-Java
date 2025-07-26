@@ -6,8 +6,6 @@ services:
     container_name: B3-Projet-Java-backend
     ports:
       - "3001:8080"
-    depends_on:
-      - mysql
     environment:
       - DB_URL=jdbc:mysql://localhost:3306/demo-sdv
       - DB_USER=root
