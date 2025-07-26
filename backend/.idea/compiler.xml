@@ -6,13 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="project-semaine-2" />
+        <module name="Projet-app-mobile" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="project-semaine-2" options="-parameters" />
+      <module name="Projet-app-mobile" options="-parameters" />
     </option>
   </component>
 </project>
