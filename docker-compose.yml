@@ -9,9 +9,9 @@ services:
     depends_on:
       - mysql
     environment:
-      - DB_URL=jdbc:mysql://mysql:3306/b3_project
+      - DB_URL=jdbc:mysql://localhost:3306/demo-sdv
       - DB_USER=root
-      - DB_PASSWORD=example
+      - DB_PASSWORD=root
     restart: unless-stopped
 
   frontend:
