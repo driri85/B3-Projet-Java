@@ -1,4 +1,4 @@
-name: CI/CD Java + Vue (Self-Hosted)
+name: CI/CD Full Stack App (Self-Hosted)
 
 on:
   push:
@@ -10,11 +10,13 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Build and run containers
+      - name: Shut down old containers
+        run: docker compose down || true
+
+      - name: Build & Start
         run: |
-          docker compose down || true
           docker compose build
           docker compose up -d
