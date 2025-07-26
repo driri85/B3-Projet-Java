@@ -3,7 +3,7 @@ version: '3.8'
 services:
   backend:
     build: ./backend
-    container_name: java-backend
+    container_name: B3-Projet-Java-backend
     ports:
       - "8080:8080"
     depends_on:
@@ -16,7 +16,7 @@ services:
 
   frontend:
     build: ./frontend
-    container_name: vue-frontend
+    container_name: B3-Projet-Java-frontend
     ports:
       - "8081:80"
     depends_on:
