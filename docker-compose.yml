@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: java-backend
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: vue-frontend
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+    depends_on:
+      - backend
