@@ -27,7 +27,8 @@ public class ProjetAppMobileApplication implements CommandLineRunner {
                     registry.addMapping("/**")
                             .allowedOrigins("https://java-frontend.arsdv.site")
                             .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                            .allowedHeaders("*");
+                            .allowedHeaders("*")
+                            .allowCredentials(true);
                 }
             };
         }
