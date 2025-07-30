@@ -18,17 +18,16 @@ public class ProjetAppMobileApplication implements CommandLineRunner {
 
     @Configuration
     public class WebConfig {
-        
         @Bean
         public WebMvcConfigurer corsConfigurer() {
             return new WebMvcConfigurer() {
                 @Override
                 public void addCorsMappings(CorsRegistry registry) {
                     registry.addMapping("/**")
-                            .allowedOrigins("https://java-frontend.arsdv.site")
-                            .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                            .allowedHeaders("*")
-                            .allowCredentials(true);
+                        .allowedOrigins("https://java-frontend.arsdv.site")
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                        .allowedHeaders("*")
+                        .allowCredentials(true);
                 }
             };
         }
