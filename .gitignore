@@ -162,4 +162,6 @@ dist
 
 # Vite logs files
 vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
+
+.idea
+backend/.idea
