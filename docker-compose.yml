@@ -7,7 +7,7 @@ services:
     ports:
       - "3002:8080"
     environment:
-      - DB_URL=jdbc:mysql://localhost:3306/demo-sdv
+      - DB_URL=jdbc:mysql://192.168.1.170:3306/demo-sdv
       - DB_USER=root
       - DB_PASSWORD=root
     restart: unless-stopped
